@@ -1,0 +1,183 @@
+/*
+HERO
+*/
+.head--h1-test{
+    font-size: 4rem;
+    line-height: 1.3;
+}
+
+.head--h1-test>span{
+    font-size: 5.5rem;
+}
+
+$colorLight : #282828;
+
+$colorDark : rgb(26, 26, 26) ;
+
+/*
+NAVIGATION
+*/
+.nav--lien-padding{
+    padding: 1px;
+}
+
+.nav--img-taille{
+    height: 54px;
+}
+
+.nav--liste-centrer{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+}
+
+
+/*
+SECTIONS
+*/
+.section--color-dark{
+    background-color: $colorLight !important;
+}
+
+.section--color-light{
+    background-color: $colorDark !important;
+}
+
+.sections--titre-taille{
+    font-size: 2rem;
+}
+
+.section--h2-marge{
+    margin-bottom: 1rem;
+}
+
+/* Carousel => Selecteur de page */
+.owl-page{
+    height: 5px !important;
+}
+
+/*
+SECTION HOME
+*/
+.home--img-padding{
+    padding: 0 !important;
+}
+
+/*
+SECTION FORMATION
+*/
+
+.formation--mecha-title{
+    line-height: 1.3;
+}
+
+.formation--titre-taille{
+    font-size: 2.3rem !important;
+}
+.formation--image-curseur{
+    cursor: all-scroll !important;
+}
+
+
+/*
+SECTION CONSEILS
+*/
+.conseil-titre-centrer-1{
+    margin-bottom: 3rem;
+}
+
+.conseil-titre-centrer-2{
+    margin-top: 6rem;
+}
+
+.conseil-titre-centrer-3{
+    margin-top: 8rem;
+}
+
+.conseil-ul-marge{
+    margin-top: 1.5rem;
+    padding-left: 0;
+}
+
+.conseil--liste-decoration{
+    list-style: none;
+    line-height: 2.2;
+}
+
+.conseil--img-taille{
+    width: 60% !important;
+    margin: 2rem;
+}
+
+.conseil--img-curseur{
+    cursor: e-resize !important;
+}
+
+.owl-carousel .owl-wrapper-outer.autoHeight{
+    transition: height 700ms ease-in-out;
+}
+
+.testimonial-section .testimonial-wrapper .owl-wrapper-outer .owl-wrapper {
+    background-color: $colorLight !important;
+  }
+
+.testimonial-section .testimonial-wrapper .owl-item {
+background-color: $colorLight !important;
+}
+
+.testimonial-section .testimonial-wrapper .item .profile-outer {
+    background-color: $colorLight !important;
+}
+
+
+/*
+SECTION DOCUMENTS
+*/
+.document--icon-marge{
+    margin-right: 1rem;
+}
+
+
+/*
+SECTION MISSION-EX
+*/
+.missionEx--container-padding{
+    padding-bottom: 115px;
+}
+
+.sectionEx--h2-marge{
+    margin-bottom: 4rem;
+}
+
+.missionEx--titre-police{
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    // font-size: 18px;
+}
+
+.missionEx--text-align{
+    text-align: center;
+}
+
+.missionEx--liste-style li{
+    list-style: none;
+}
+
+
+.missionEx--video-marge{
+    margin: 5rem 0 2rem 0;
+}
+
+
+/*
+SECTION FOOTER
+*/
+.footer--img-padding{
+    padding: 1rem 0 0 0 !important;
+}
+
+/*
+- au hover sur slider mission, figer le slider
+- changer curseur sliders
+
+*/
