@@ -1,3 +1,4 @@
+// npm install	=> Install node_modules
 // gulp watch 	=> Parsing + Browser-Sync
 // gulp dist 	=> Concat + MiniJS + MiniCSS
 
