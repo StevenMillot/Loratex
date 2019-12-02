@@ -276,6 +276,21 @@ SECTION MISSION-EX
 
 
 /*
+SECTION CONTACT
+*/
+// champs inputs
+.input-outer .group.relative{
+    border-bottom: 1px dashed $gris;
+    transition: border-bottom 2s;
+}
+.input-outer.input-filled .group.relative{
+    border-bottom: transparent;
+}
+.input-outer.input-filled .group.relative input {
+    color: black;
+}
+
+/*
 SECTION FOOTER
 */
 .footer--img-padding{

@@ -213,6 +213,19 @@ SECTION MISSION-EX
   margin: 5rem 0 2rem 0; }
 
 /*
+SECTION CONTACT
+*/
+.input-outer .group.relative{
+  border-bottom: 1px dashed #777;
+  transition: border-bottom 2s;
+}
+.input-outer.input-filled .group.relative{
+  border-bottom: transparent;
+}
+.input-outer.input-filled .group.relative input {
+  color: black;
+}
+/*
 SECTION FOOTER
 */
 .footer--img-padding {
