@@ -143,14 +143,25 @@ SECTION HOME
 /*
 SECTION FORMATION
 */
-#services-section .btn {
-    color: $blue;
-    font-style: italic;
+#services-section {
+
+    .btn{
+        color: $blue;
+        font-style: italic;
+    }
+
+    .each-services-outer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .each-services-inner .title{
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
+    }
 }
-.services-section .each-services .each-services-inner .title{
-    line-height: 1.3;
-    margin-bottom: 1.5rem;
-}
+
 .formation--mecha-title{
     line-height: 1.3;
 }
@@ -292,13 +303,26 @@ SECTION MISSION EXPLOSIVE
 
 
 /*
-SECTION MISSION EXPLOSIVE
+SECTION TEAM
 */
 #team-section{
     .lora-team{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .profile-image{
+        margin-bottom: 10px;
+    }
+    .profile-content{
+        .position {
+            color: $gris;
+
+        }
+        span{
+            width: 145px;
+        }
     }
 }
 
@@ -340,8 +364,28 @@ SECTION CONTACT
 /*
 SECTION FOOTER
 */
+.contact-footer{
+    .each-section {
+        .overflow p{
+            color: $blue;
+        }
+    }
+    .row{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
 .footer--img-padding{
     padding: 1rem 0 0 0 !important;
+    margin-right: 20px;
+    width: 100px;
+}
+.contact-footer .social-icon li a{
+    background-color: $green;
+
+    i{
+        color: white;
+    }
 }
 
 /*
