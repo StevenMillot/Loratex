@@ -1,9 +1,3 @@
-.dark-background {
-  background-color: white; }
-
-.single-form .input-label::before {
-  color: #f7ac54; }
-
 body {
   color: #4562ae !important; }
 
@@ -34,6 +28,9 @@ p {
 /*
 HERO
 */
+.main-preloader {
+  background-color: white; }
+
 .head--h1-test {
   font-size: 4rem;
   line-height: 1.3; }
@@ -213,18 +210,60 @@ SECTION MISSION-EX
   margin: 5rem 0 2rem 0; }
 
 /*
+SECTION PORTFOLIO
+*/
+#portfolio-section .btn {
+  color: #4562ae; }
+
+/*
+SECTION MISSION EXPLOSIVE
+*/
+#services-section li {
+  color: #777; }
+
+/*
+SECTION MISSION EXPLOSIVE
+*/
+#team-section .lora-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/*
 SECTION CONTACT
 */
-.input-outer .group.relative{
+.dark-background {
+  background-color: white; }
+
+.single-form .input-label::before {
+  color: #f7ac54; }
+
+.input-outer .group.relative {
   border-bottom: 1px dashed #777;
-  transition: border-bottom 2s;
-}
-.input-outer.input-filled .group.relative{
-  border-bottom: transparent;
-}
-.input-outer.input-filled .group.relative input {
-  color: black;
-}
+  -webkit-transition: border-bottom 2s;
+  transition: border-bottom 2s; }
+
+.input-outer.input-filled .group.relative {
+  border-bottom: transparent; }
+
+#contact-form input, #contact-form textarea {
+  color: black; }
+
+#contact-form textarea {
+  line-height: 1.6;
+  padding-top: 15px; }
+
+#contact-form .btn {
+  color: #4562ae; }
+
+#contact-form .icon {
+  color: #4562ae; }
+
 /*
 SECTION FOOTER
 */
