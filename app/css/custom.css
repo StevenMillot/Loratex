@@ -1,4 +1,5 @@
 body {
+  background-color: #fff;
   color: #4562ae !important; }
 
 h1 {
@@ -24,6 +25,9 @@ p {
 
 .p-l-10 {
   padding-left: 20px; }
+
+ul {
+  padding-left: 0; }
 
 /*
 HERO
@@ -55,7 +59,7 @@ NAVIGATION
   color: #4562ae !important; }
 
 .navbar {
-  z-index: 2; }
+  z-index: 3; }
 
 .navbar-nav {
   z-index: 1; }
@@ -80,7 +84,9 @@ NAVIGATION
       flex-wrap: wrap !important;
   -webkit-box-pack: center !important;
       -ms-flex-pack: center !important;
-          justify-content: center !important; }
+          justify-content: center !important;
+  -webkit-box-shadow: 0px 10px 16px #0000001a;
+          box-shadow: 0px 10px 16px #0000001a; }
 
 /*
 SECTIONS
@@ -94,8 +100,8 @@ SECTIONS
 .sections--titre-taille {
   font-size: 2rem; }
 
-.section--h2-marge {
-  margin-bottom: 1rem; }
+.section-header {
+  margin-bottom: 30px !important; }
 
 /* Carousel => Selecteur de page */
 .owl-page {
@@ -108,13 +114,13 @@ SECTION HOME
   padding: 0 !important; }
 
 /*
-SECTION FORMATION
+COMMON SECTIONS
 */
-#services-section .btn {
+.common-section .btn {
   color: #4562ae;
   font-style: italic; }
 
-#services-section .each-services-outer {
+.common-section .each-services-outer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,9 +130,29 @@ SECTION FORMATION
       -ms-flex-pack: center;
           justify-content: center; }
 
-#services-section .each-services-inner .title {
+.common-section .each-services-inner .title {
   line-height: 1.3;
   margin-bottom: 1.5rem; }
+
+.common-section .back-button-outer.overflow {
+  background-color: #fff;
+  padding: 3px 6px 3px 3px; }
+  .common-section .back-button-outer.overflow a {
+    position: relative;
+    top: -6px; }
+  .common-section .back-button-outer.overflow i {
+    position: relative;
+    top: 13px; }
+  .common-section .back-button-outer.overflow .retour-btn {
+    font-size: 17px;
+    margin: 3px; }
+
+/*
+SECTION FORMATION
+*/
+#formation {
+  margin-bottom: 7rem;
+  margin-top: 5rem; }
 
 .formation--mecha-title {
   line-height: 1.3; }
@@ -176,7 +202,8 @@ SECTION CONSEILS
   margin: 2rem; }
 
 .conseil--img-curseur {
-  cursor: e-resize !important; }
+  cursor: all-scroll !important;
+  width: auto; }
 
 .owl-carousel .owl-wrapper-outer.autoHeight {
   -webkit-transition: height 700ms ease-in-out;
@@ -194,6 +221,9 @@ SECTION CONSEILS
 /*
 SECTION DOCUMENTS
 */
+.document-section a {
+  padding: 0 4px; }
+
 .document--icon-marge {
   margin-right: 1rem; }
 
@@ -222,18 +252,40 @@ SECTION MISSION-EX
 /*
 SECTION PORTFOLIO
 */
-#portfolio-section .btn {
-  color: #4562ae; }
+#portfolio-section {
+  margin: 30px 0 70px; }
+  #portfolio-section .btn {
+    color: #4562ae; }
+  #portfolio-section .project-detail .list li {
+    border-color: #4562ae; }
+  #portfolio-section .portfolio-wrapper {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; }
+  #portfolio-section .heading-text .inner {
+    padding: 2px; }
+  #portfolio-section .intervention--presentation-image {
+    margin: 70px 0;
+    max-height: 450px; }
+  #portfolio-section .intervention--portfolio-image {
+    width: auto;
+    max-height: 450px;
+    margin: auto; }
+  #portfolio-section .owl-buttons {
+    display: none; }
+  #portfolio-section .section-separator {
+    padding-top: 0; }
 
 /*
 SECTION MISSION EXPLOSIVE
 */
-#services-section li {
+#mission-section li {
   color: #777; }
 
 /*
 SECTION TEAM
 */
+#team-section .team--section {
+  margin-bottom: 0; }
+
 #team-section .lora-team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,6 +334,10 @@ SECTION CONTACT
 
 #contact-form .icon {
   color: #4562ae; }
+
+#contact-form .contact-us .single-form {
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.25); }
 
 /*
 SECTION FOOTER
