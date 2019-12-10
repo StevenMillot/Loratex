@@ -160,6 +160,18 @@ SECTION HOME
 .home--img-padding{
     padding: 0 !important;
 }
+.home-nav--centre {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+        margin: 6px 0;
+        a {
+            font-size: 1.5rem !important;
+            // font-weight: bold;
+        }
+    }
+}
 
 /*
 COMMON SECTIONS
