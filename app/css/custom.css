@@ -113,6 +113,20 @@ SECTION HOME
 .home--img-padding {
   padding: 0 !important; }
 
+.home-nav--centre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .home-nav--centre li {
+    margin: 6px 0; }
+    .home-nav--centre li a {
+      font-size: 1.5rem !important; }
+
 /*
 COMMON SECTIONS
 */
