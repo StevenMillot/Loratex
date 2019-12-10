@@ -1,6 +1,73 @@
+// Variables
+$green: #0a8141;
+$blue: #4562ae;
+$or: #f7ac54;
+$gris: #777;
+
+$colorLight: white;
+$colorDark: white;
+
+// Font Size
+// html { font-size: 62.5%; }
+// body { font-size: 1.6rem; }
+
+
+
+// @media (max-width: 640px) {
+//     p, a , li{
+//         font-size: 2rem !important;
+//     }
+//   }
+
+// span, li, p, a {
+//     font-size: 3rem !important;
+// }
+
+// Color
+body{
+    background-color: #fff;
+    color: $blue !important;
+}
+h1{
+    color: $blue !important;
+}
+h2{
+    color: $blue !important;
+}
+h3, .formations-titre{
+    color: $blue !important;
+}
+h4{
+    color: $or !important;
+}
+h6{
+    color: $or !important;
+}
+p {
+    color: $gris;
+}
+
+// Padding
+.p-r-10 {
+    padding-right: 20px;
+}
+.p-l-10 {
+    padding-left: 20px;
+}
+ul {
+    padding-left: 0;
+}
+
+
+
+
 /*
 HERO
 */
+.main-preloader{
+    background-color: white;
+}
+
 .head--h1-test{
     font-size: 4rem;
     line-height: 1.3;
@@ -10,13 +77,43 @@ HERO
     font-size: 5.5rem;
 }
 
-$colorLight : #282828;
+.overlay-color::before{
+    background-color: transparent;
+}
 
-$colorDark : rgb(26, 26, 26) ;
+.home-section .heading-outer::after,
+.home-section .heading-outer::before {
+    background-color: $or;
+}
 
 /*
 NAVIGATION
 */
+.nav {
+    a {
+        color: $blue;
+    }
+    .btn-nav{
+        color: $blue !important;
+    }
+}
+
+.navbar{
+    z-index: 3;
+}
+
+.navbar-nav {
+    z-index: 1;
+}
+
+.navbar, .navbar-nav {
+    background-color: white !important;
+}
+
+.nav-trigger .icon, .nav-trigger .icon::after, .nav-trigger .icon::before {
+    background-color: $blue;
+}
+
 .nav--lien-padding{
     padding: 1px;
 }
@@ -29,6 +126,7 @@ NAVIGATION
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
+    box-shadow: 0px 10px 16px #0000001a;
 }
 
 
@@ -47,8 +145,8 @@ SECTIONS
     font-size: 2rem;
 }
 
-.section--h2-marge{
-    margin-bottom: 1rem;
+.section-header {
+    margin-bottom: 30px !important;
 }
 
 /* Carousel => Selecteur de page */
@@ -62,11 +160,64 @@ SECTION HOME
 .home--img-padding{
     padding: 0 !important;
 }
+.home-nav--centre {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+        margin: 6px 0;
+        a {
+            font-size: 1.5rem !important;
+            // font-weight: bold;
+        }
+    }
+}
+
+/*
+COMMON SECTIONS
+*/
+.common-section {
+
+    .btn{
+        color: $blue;
+        font-style: italic;
+    }
+
+    .each-services-outer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .each-services-inner .title{
+        line-height: 1.3;
+        margin-bottom: 1.5rem;
+    }
+    .back-button-outer.overflow{
+        background-color: #fff;
+        padding: 3px 6px 3px 3px;
+        a{
+            position: relative;
+            top: -6px;
+        }
+        i{
+            position: relative;
+            top: 13px;
+        }
+        .retour-btn {
+            font-size: 17px;
+            margin: 3px;
+        }
+    }
+}
 
 /*
 SECTION FORMATION
 */
-
+#formation {
+    margin-bottom: 7rem;
+    margin-top: 5rem;
+}
 .formation--mecha-title{
     line-height: 1.3;
 }
@@ -77,11 +228,29 @@ SECTION FORMATION
 .formation--image-curseur{
     cursor: all-scroll !important;
 }
+.services-content-outer .overflow {
+    p{
+        color: $gris;
+    }
+    a{
+        color: $blue;
+    }
+}
+
+// icon back
+.services-full-view .services-details .back-button-outer .btn, .services-full-view .services-details .back-button-outer .btn .icon{
+    color: $or;;
+}
 
 
 /*
 SECTION CONSEILS
 */
+.profile-outer {
+    font-size: 1.6rem !important;
+    line-height: 1;
+}
+
 .conseil-titre-centrer-1{
     margin-bottom: 3rem;
 }
@@ -102,6 +271,7 @@ SECTION CONSEILS
 .conseil--liste-decoration{
     list-style: none;
     line-height: 2.2;
+    color: $gris;
 }
 
 .conseil--img-taille{
@@ -110,7 +280,8 @@ SECTION CONSEILS
 }
 
 .conseil--img-curseur{
-    cursor: e-resize !important;
+    cursor: all-scroll !important;
+    width: auto;
 }
 
 .owl-carousel .owl-wrapper-outer.autoHeight{
@@ -133,6 +304,11 @@ background-color: $colorLight !important;
 /*
 SECTION DOCUMENTS
 */
+.document-section {
+    a {
+        padding: 0 4px;
+    }
+}
 .document--icon-marge{
     margin-right: 1rem;
 }
@@ -168,12 +344,150 @@ SECTION MISSION-EX
     margin: 5rem 0 2rem 0;
 }
 
+/*
+SECTION PORTFOLIO
+*/
+#portfolio-section{
+    margin: 30px 0 70px;
+
+    .btn {
+        color: $blue;
+    }
+    .project-detail .list li {
+        border-color: $blue;
+    }
+    .portfolio-wrapper {
+        text-shadow: -1px 0 white, 0 1px white,
+      1px 0 white, 0 -1px white
+    }
+
+    .heading-text {
+        .inner {
+            padding: 2px;
+        }
+    }
+
+    .intervention--presentation-image {
+        margin: 70px 0;
+        max-height: 450px;
+    }
+    .intervention--portfolio-image {
+        width: auto;
+        max-height: 450px;
+        margin: auto;
+    }
+
+    .owl-buttons {
+        display: none;
+    }
+
+    .section-separator {
+        padding-top: 0;
+    }
+}
+
+
+/*
+SECTION MISSION EXPLOSIVE
+*/
+#mission-section{
+    li{
+        color: $gris;
+    }
+}
+
+
+/*
+SECTION TEAM
+*/
+#team-section{
+    .team--section {
+        margin-bottom: 0;
+    }
+
+    .lora-team{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .profile-image{
+        margin-bottom: 10px;
+    }
+    .profile-content{
+        .position {
+            color: $gris;
+
+        }
+        span{
+            width: 145px;
+        }
+    }
+}
+
+
+/*
+SECTION CONTACT
+*/
+.dark-background{
+    background-color: white;
+}
+.single-form .input-label::before{
+    color: $or;
+}
+// champs inputs
+.input-outer .group.relative{
+    border-bottom: 1px dashed $gris;
+    transition: border-bottom 2s;
+}
+.input-outer.input-filled .group.relative{
+    border-bottom: transparent;
+}
+
+#contact-form {
+    input, textarea {
+        color: black;
+    }
+    textarea {
+        line-height: 1.6;
+        padding-top: 15px;
+    }
+    .btn {
+        color: $blue;
+    }
+    .icon {
+        color: $blue;
+    }
+    .contact-us .single-form {
+        box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.25);
+    }
+}
 
 /*
 SECTION FOOTER
 */
+.contact-footer{
+    .each-section {
+        .overflow p{
+            color: $blue;
+        }
+    }
+    .row{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
 .footer--img-padding{
     padding: 1rem 0 0 0 !important;
+    margin-right: 20px;
+    width: 100px;
+}
+.contact-footer .social-icon li a{
+    background-color: $green;
+
+    i{
+        color: white;
+    }
 }
 
 /*

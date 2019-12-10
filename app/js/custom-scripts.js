@@ -2,6 +2,20 @@
 
   'use strict';
 
+    /**
+     * =============================================
+     * Close menu mobile
+     * =============================================
+     */
+    $('.js-closeMenu').on('click', function() {
+
+      $('.js--close-btn').removeClass('nav-visible');
+      $('#js-navbar-menu').removeClass('show-nav').fadeIn(10);
+
+    });
+
+
+
 
   /**
    * =====================================
@@ -196,7 +210,7 @@
           ActiveID        = '.main-navbar-top',
           scrollPos       = $(this).scrollTop();
 
-      if( scrollPos > ( $('.home-section').height() - 80 ) ) {
+      if( scrollPos > ( $('.home-section').height() - 40 ) ) {
         $( ActiveID ).addClass( activeClass );
       } else {
         $( ActiveID ).removeClass( activeClass );
@@ -307,7 +321,6 @@
 
     var servicesButton = $('.btn-services');
     servicesButton.on('click', function(el) {
-      el.preventDefault();
 
       var actionId        = $(this).attr('href'),
           hideSection     = $(this).closest('.each-services-outer'),
@@ -339,7 +352,6 @@
      */
     var servicesBackButton = $('.btn-services-back');
     servicesBackButton.on('click', function(el) {
-      el.preventDefault();
 
       var actionId        = $('.each-services-outer'),
           hideSection     = $(this).closest('.services-details'),
