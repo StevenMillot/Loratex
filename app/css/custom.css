@@ -145,10 +145,11 @@ SECTION HOME
 */
 
 .home-section .list-view li {
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .home--img-padding {
+  margin-left: 20px;
   padding: 0 !important; }
 
 .home-nav--centre {
