@@ -2,14 +2,14 @@
 $green: #0a8141;
 $blue: #4562ae;
 $or: #f7ac54;
-$gris: #777;
+$gris: rgb(78, 78, 78);
 
 $colorLight: white;
 $colorDark: white;
 
 // Font Size
-// html { font-size: 62.5%; }
-// body { font-size: 1.6rem; }
+html { font-size: 62.5%; }
+body { font-size: 1.6rem; }
 
 
 
@@ -30,21 +30,49 @@ body{
 }
 h1{
     color: $blue !important;
+    -webkit-font-smoothing: antialiased;
+
 }
 h2{
     color: $blue !important;
+    font-size: 4.2rem !important;
+    -webkit-font-smoothing: antialiased;
+
 }
 h3, .formations-titre{
     color: $blue !important;
+    -webkit-font-smoothing: antialiased;
+
 }
 h4{
     color: $or !important;
+    font-size: 2.4rem !important;
+    -webkit-font-smoothing: antialiased;
+
 }
 h6{
     color: $or !important;
+    font-size: 2.2rem !important;
+    -webkit-font-smoothing: antialiased;
+
 }
-p {
+p, li {
     color: $gris;
+    font-size: 1.6rem !important;
+    -webkit-font-smoothing: antialiased;
+
+}
+p.sub-heading {
+    font-size: 2rem !important;
+    -webkit-font-smoothing: antialiased;
+
+}
+a {
+    font-size: 1.6rem !important;
+    -webkit-font-smoothing: antialiased;
+}
+.back-button-outer i {
+    font-size: 40px !important;
 }
 
 // Padding
@@ -222,9 +250,6 @@ SECTION FORMATION
     line-height: 1.3;
 }
 
-.formation--titre-taille{
-    font-size: 2.3rem !important;
-}
 .formation--image-curseur{
     cursor: all-scroll !important;
 }
@@ -466,6 +491,11 @@ SECTION CONTACT
 /*
 SECTION FOOTER
 */
+// #contact-us-section {
+//     li, a {
+//         color: $gris !important;
+//     }
+// }
 .contact-footer{
     .each-section {
         .overflow p{
