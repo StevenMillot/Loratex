@@ -104,7 +104,8 @@ NAVIGATION
   background-color: #4562ae; }
 
 .nav--lien-padding {
-  padding: 1px; }
+  margin-left: 20px;
+  padding: 0; }
 
 .nav--img-taille {
   height: 54px; }
