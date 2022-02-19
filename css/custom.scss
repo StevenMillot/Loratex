@@ -118,6 +118,9 @@ HERO
 NAVIGATION
 */
 .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     a {
         color: $blue;
     }
@@ -185,7 +188,13 @@ SECTIONS
 /*
 SECTION HOME
 */
-.home--img-padding{
+
+.home-section .list-view li {
+    margin-bottom: 15px;
+  }
+
+.home--img-padding {
+    margin-left: 20px;
     padding: 0 !important;
 }
 .home-nav--centre {

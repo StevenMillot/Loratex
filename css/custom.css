@@ -79,6 +79,12 @@ HERO
 /*
 NAVIGATION
 */
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
 .nav a {
   color: #4562ae; }
 
@@ -137,7 +143,13 @@ SECTIONS
 /*
 SECTION HOME
 */
+
+.home-section .list-view li {
+  margin-bottom: 15px;
+}
+
 .home--img-padding {
+  margin-left: 20px;
   padding: 0 !important; }
 
 .home-nav--centre {
