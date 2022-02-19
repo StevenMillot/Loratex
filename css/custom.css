@@ -80,11 +80,6 @@ HERO
 NAVIGATION
 */
 
-.nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-
 .nav a {
   color: #4562ae; }
 
@@ -407,7 +402,8 @@ SECTION FOOTER
 .footer--img-padding {
   padding: 1rem 0 0 0 !important;
   margin-right: 20px;
-  width: 100px; }
+  width: 100px;
+  margin-left: 15px;}
 
 .contact-footer .social-icon li a {
   background-color: #0a8141; }
