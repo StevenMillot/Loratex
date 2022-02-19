@@ -23,7 +23,7 @@ h3, .formations-titre {
 
 h4 {
   color: #f7ac54 !important;
-  font-size: 2.4rem !important;
+  font-size: 2.3rem !important;
   -webkit-font-smoothing: antialiased; }
 
 h6 {
@@ -217,6 +217,11 @@ SECTION FORMATION
 
 .services-full-view .services-details .back-button-outer .btn, .services-full-view .services-details .back-button-outer .btn .icon {
   color: #f7ac54; }
+
+.formation__title {
+  line-height: 1.3 !important;
+  margin-bottom: 15px !important;
+}
 
 /*
 SECTION CONSEILS
