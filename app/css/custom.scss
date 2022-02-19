@@ -118,6 +118,10 @@ HERO
 NAVIGATION
 */
 .nav {
+    display: flex;
+    justify-content: c;
+    flex-wrap: wrap;
+    justify-content: center;
     a {
         color: $blue;
     }
