@@ -76,6 +76,13 @@ HERO
 .home-section .heading-outer::before {
   background-color: #f7ac54; }
 
+.hero__img-link {
+  padding: 0;
+  height: 130px !important; }
+
+.hero__contact-link {
+  margin-top: 75px; }
+
 /*
 NAVIGATION
 */
@@ -98,8 +105,7 @@ NAVIGATION
 .nav-trigger .icon, .nav-trigger .icon::after, .nav-trigger .icon::before {
   background-color: #4562ae; }
 
-.nav--lien-padding {
-  margin-left: 20px;
+.nav-sticky__img {
   padding: 0; }
 
 .nav--img-taille {
@@ -218,9 +224,24 @@ SECTION FORMATION
 .services-full-view .services-details .back-button-outer .btn, .services-full-view .services-details .back-button-outer .btn .icon {
   color: #f7ac54; }
 
+.formation__title-wrapper {
+  padding-top: 6px;
+}
 .formation__title {
   line-height: 1.3 !important;
   margin-bottom: 15px !important;
+}
+.formation__ism-atex {
+  width: 110px;
+  position: relative;
+  top: -9px;
+  margin-left: 10px;
+}
+.formation__saqr-atex {
+  width: 110px;
+  position: relative;
+  top: -6px;
+  margin-left: 10px;
 }
 
 /*
