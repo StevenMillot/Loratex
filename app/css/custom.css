@@ -277,6 +277,10 @@ SECTION CONSEILS
   cursor: all-scroll !important;
   width: auto; }
 
+.conseil__carousel-img {
+  opacity: 0;
+}
+
 .owl-carousel .owl-wrapper-outer.autoHeight {
   -webkit-transition: height 700ms ease-in-out;
   transition: height 700ms ease-in-out; }
